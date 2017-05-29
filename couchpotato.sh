@@ -5,7 +5,7 @@ sudo docker create \
     -v /storage/apps/couchpotato:/config \
     -v /storage/downloads:/downloads \
     -v /storage/movies:/movies \
-    -e PGID=20 -e PUID=501 \
+    -e PGID=1000 -e PUID=1000 \
     -e TZ=Europe/Brussels \
     -p 5050:5050 \
     --restart="always" \
