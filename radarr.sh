@@ -8,7 +8,7 @@ docker create \
   -e TZ=Europe/Brussels \
   -p 7878:7878 \
   -v /storage/apps/radarr:/config \
-  -v /storage/tv:/movies \
+  -v /storage/movies:/movies \
   -v /storage/downloads:/downloads \
   --restart unless-stopped \
   linuxserver/radarr
